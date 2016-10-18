@@ -42,4 +42,5 @@ def update(id):
 def delete(id):
     t = Todo.query.filter_by(id=id).first()
     t.delete()
+    t.save()
     return redirect(url_for('.index'))
