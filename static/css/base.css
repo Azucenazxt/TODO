@@ -1,0 +1,50 @@
+body {
+    background: #ccf9b7;
+    margin: 2px;
+    min-width: 600px;
+}
+
+.tong-left {
+    float: left;
+}
+
+.tong-right {
+    float: right;
+}
+
+
+.tong-hide {
+    display: none;
+}
+
+
+.tong-center {
+    text-align: center;
+}
+.tong-header {
+    background-color: rgba(255, 255, 255, 0.52);
+    padding: 1px 30px;
+    font-family: fantasy;
+    height: 100px;
+    font-size: 20px;
+}
+
+.tong-content {
+    padding: 10px 50px;
+    background-color: rgba(128, 128, 128, 0.31);
+    border-radius: 5px;
+    width: 300px;
+    margin: 0 auto;
+    font-family: Microsoft Yahei;
+}
+
+.tong-bottom {
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    font-family: -webkit-pictograph;
+    font-size: 20px;
+    padding: 20px;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.52);
+}

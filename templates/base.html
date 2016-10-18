@@ -1,0 +1,29 @@
+<!Doctype html>
+<html>
+<head>
+    <title>
+        TodoList
+    </title>
+    {% block head %}
+    <link rel="stylesheet" href="/static/css/base.css">
+    {% endblock %}
+</head>
+<body>
+    <div class="tong-header">
+        <h1 class="tong-left">
+            Todo List
+        </h1>
+        <a class="tong-right" href="{{ url_for('todo.index') }}">TODO</a>
+    </div>
+    <div class="tong-content">
+        <div class="tong-inner-content">
+        {% block content %}{% endblock %}
+        </div>
+    </div>
+    <div class="tong-bottom">
+    {% block footer %}
+        Copyright 2016 by <a href="/">CaiCai</a>.
+    {% endblock %}
+    </div>
+</body>
+</html>

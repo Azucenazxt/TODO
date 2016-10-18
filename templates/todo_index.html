@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+{% block head %}
+<!-- super 就是说继承的模板的内容不变, 然后再添加上新的东西 -->
+    {{ super() }}
+    <link rel="stylesheet" href="/static/css/todo_index.css">
+    <script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" crossorigin="anonymous"></script>
+    <script src="/static/js/api.js"></script>
+    <script src="/static/js/todo.js"></script>
+{% endblock %}
+{% block content %}
+    <div class="tong-title">学习清单</div>
+    <div class="tong-task tong-task-block">
+    {% for t in todo_list %}
+        <div class="tong-task-line" data-id="{{ t.id }}">
+            <span class="tong-task-text">{{ t.task }}</span>
+            <a class="tong-task-delete tong-little-button tong-right" data-id="{{ t.id }}" href="#">delete</a>
+            <a class="tong-task-edit tong-little-button tong-right" data-id="{{ t.id }}" href="#">edit</a>
+        </div>
+    {% endfor %}
+    </div>
+    <div class="tong-button">
+        <button class="tong-task-add" >AddNewTask</button>
+    </div>
+{% endblock %}
+

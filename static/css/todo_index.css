@@ -1,0 +1,52 @@
+.tong-inner-content {
+    background: white;
+    border-radius: 5px;
+}
+
+.tong-title {
+    border-bottom: solid 1px #b8afc1;
+    font-size: 20px;
+    color: #927878;
+    padding: 10px;
+}
+
+.tong-task-line {
+    margin: 8px;
+    padding: 8px;
+    border-bottom: 1px #b8afc1 dashed;
+}
+
+.tong-task-input {
+    padding: 0 15px;
+    margin: 15px 0;
+}
+
+.tong-little-button {
+    background: orange;
+    border-style: none;
+    color: white;
+    border-radius: 3px;
+    padding: 3px;
+    text-decoration: none;
+}
+
+
+.tong-task-edit, .tong-task-delete, .tong-task-update {
+    display: inline-block;
+    font-size: 13px;
+    margin: 1px 5px;
+    padding: 1px;
+}
+
+.tong-edit-update {
+    margin: 10px 0;
+}
+
+.tong-task-add {
+    background: #65c93a;
+    border-style: none;
+    color: white;
+    margin: 10px;
+    padding: 10px;
+}
+
